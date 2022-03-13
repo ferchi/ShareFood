@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "954633256208",
+    "project_id": "sharefood-12",
+    "storage_bucket": "sharefood-12.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:954633256208:android:6de53c83e641d31406f995",
+        "android_client_info": {
+          "package_name": "com.hackunica.sharefood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "954633256208-82gvcmfo9f8mo8jbit365frfpgkg84ii.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hackunica.sharefood",
+            "certificate_hash": "a6d1f673875eb7774733fb607ec8cc4c304e77dc"
+          }
+        },
+        {
+          "client_id": "954633256208-8brv5dqgfqr6rkl0uegtjk6cocf1nqi5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB01lpI3ALzKmOdcRnXnHv2JTt2ZBSFFps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "954633256208-8brv5dqgfqr6rkl0uegtjk6cocf1nqi5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
