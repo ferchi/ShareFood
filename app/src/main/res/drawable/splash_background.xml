@@ -3,13 +3,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:drawable="@color/white"/>
     <item
+        android:left="10dp"
+        android:right="10dp"
         android:top="250dp"
         android:bottom="250dp"
-        android:right="15dp"
-        android:left="15dp"
-        >
-        <bitmap
-            android:src="@drawable/ic_splash_logo" />
-    </item>
+        android:drawable="@drawable/ic_splash_logo"/>
+
 
 </layer-list>

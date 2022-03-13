@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home_fragment">
+
+    <fragment
+        android:id="@+id/home_fragment"
+        android:name="com.hackunica.sharefood.main.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/user_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/user_fragment"
+        android:name="com.hackunica.sharefood.main.UserFragment"
+        android:label="User"
+        tools:layout="@layout/fragment_user" >
+        <action
+            android:id="@+id/action_secondFragment_to_thirdFragment"
+            app:destination="@id/store_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/store_fragment"
+        android:name="com.hackunica.sharefood.main.StoreFragment"
+        android:label="Store"
+        tools:layout="@layout/fragment_store" >
+    </fragment>
+</navigation>
