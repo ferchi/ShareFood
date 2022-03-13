@@ -8,12 +8,18 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.animation.animpresseffect.PressEffectCardView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 import com.hackunica.sharefood.R
+
+import android.content.Intent
+import androidx.core.content.ContextCompat.startActivity
+import com.hackunica.sharefood.InfoActivity
+
 
 class DonationAdapter(private val donationList : ArrayList<Donacion>) : RecyclerView.Adapter <DonationAdapter.DonationViewHolder>(){
     lateinit var postId : String
@@ -38,6 +44,16 @@ class DonationAdapter(private val donationList : ArrayList<Donacion>) : Recycler
         postId = currentItem.id.toString()
 
         loadImg(holder.image)
+
+        holder.cardInfo.setOnClickListener {
+            val intent = Intent(context, InfoActivity::class.java)
+            intent.putExtra("address", currentItem.address)
+            intent.putExtra("info", currentItem.info)
+            intent.putExtra("status", currentItem.status)
+            intent.putExtra("date", currentItem.date)
+            intent.putExtra("id", postId)
+            context.startActivity(intent);
+        }
     }
 
     override fun getItemCount(): Int {
@@ -49,6 +65,7 @@ class DonationAdapter(private val donationList : ArrayList<Donacion>) : Recycler
         val info : TextView =  itemView.findViewById(R.id.tv_info)
         val status : TextView = itemView.findViewById(R.id.tv_status)
         val date : TextView = itemView.findViewById(R.id.tv_date)
+        val cardInfo: PressEffectCardView = itemView.findViewById(R.id.card_view_item)
     }
 
     private fun loadImg(view: ImageView) {

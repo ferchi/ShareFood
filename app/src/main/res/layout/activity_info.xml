@@ -6,4 +6,120 @@
     android:layout_height="match_parent"
     tools:context=".InfoActivity">
 
+
+    <ImageView
+        android:id="@+id/iv_info"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/splash"/>
+
+    <LinearLayout
+        android:id="@+id/flProfile"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="-32dp"
+        android:background="@drawable/top_rounded_corners"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_info"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="8dp">
+            <life.sabujak.roundedbutton.RoundedButton
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Disponible"
+                android:textColor="@color/red"
+                android:textSize="12sp"
+                android:fontFamily="@font/viga"
+                app:buttonColor="@color/bg_menu"
+                app:buttonCornerRadius="20dp" />
+            <life.sabujak.roundedbutton.RoundedButton
+                android:id="@+id/btn_solicitar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:buttonColor="@color/bg_menu"
+                app:drawableStartCompat="@drawable/ic_baseline_favorite_24"
+                app:buttonCornerRadius="20dp"
+                />
+            <TextView
+                android:layout_marginStart="8dp"
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13/03/2022 04:11"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp">
+            <life.sabujak.roundedbutton.RoundedButton
+                android:id="@+id/location_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:buttonColor="@color/bg_menu"
+                app:drawableStartCompat="@drawable/ic_baseline_location_on_24"
+                app:buttonCornerRadius="20dp"/>
+            <TextView
+                android:id="@+id/tv_info_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dirección"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bentonsans_bold"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="8dp"
+    android:paddingStart="8dp">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:text="Detalles de la donación"
+    android:textStyle="bold"
+    android:textColor="@color/black"/>
+
+</LinearLayout>
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:text="Detalles de la donación"
+            android:fontFamily="@font/betonsans"
+            android:textColor="@color/black"/>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
