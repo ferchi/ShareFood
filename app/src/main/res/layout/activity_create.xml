@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nueva Donación"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@color/dark_red"
+        android:fontFamily="@font/bentonsans_bold"
+        android:layout_marginTop="16dp"/>
+
+    <com.animation.animpresseffect.PressEffectCardView
+        android:id="@+id/card_iv_create_donation"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        >
+        <ImageView
+            android:id="@+id/iv_create_donation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_photo_camera_24"/>
+    </com.animation.animpresseffect.PressEffectCardView>
+
+        <EditText
+            android:id="@+id/et_donation_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingresa tu dirección"
+            android:background="@drawable/custom_input"
+            android:height="60dp"
+            android:padding="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:inputType="text"
+            android:maxLines="1"
+            />
+    <EditText
+        android:id="@+id/et_donation_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa la información de tu donativo"
+        android:background="@drawable/custom_input"
+        android:height="60dp"
+        android:padding="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:inputType="text"
+        android:maxLines="1"
+        />
+
+    <life.sabujak.roundedbutton.RoundedButton
+        android:id="@+id/btn_donation_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DONAR"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        app:buttonColor="@color/bg_menu"
+        app:buttonCornerRadius="20dp"
+        android:padding="16dp"
+        />
+
+
+</LinearLayout>

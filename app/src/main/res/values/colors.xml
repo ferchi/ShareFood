@@ -8,5 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#A61F1F</color>
+    <color name="dark_red">#FF1D1D</color>
     <color name="bg_menu">#EEE8E8</color>
+    <color name="bg_searchview">#EFF3FE</color>
+    <color name="stroke_searchview">#CFDAF8</color>
 </resources>

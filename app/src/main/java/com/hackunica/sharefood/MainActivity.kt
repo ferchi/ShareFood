@@ -1,5 +1,6 @@
 package com.hackunica.sharefood
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.PopupMenu
@@ -21,6 +22,10 @@ class MainActivity : AppCompatActivity() {
 
         navController = findNavController(R.id.home_fragment)
         setupSmoothBottomMenu()
+        binding.fabCreate.setOnClickListener {
+            val intent = Intent(this, CreateActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 

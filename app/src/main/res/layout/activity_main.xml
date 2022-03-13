@@ -31,4 +31,16 @@
         app:indicatorColor="@color/bg_menu"
         />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/home_fragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_baseline_add_24"
+        android:backgroundTint="@color/bg_menu"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
